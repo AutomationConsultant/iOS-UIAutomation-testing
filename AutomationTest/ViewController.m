@@ -1,38 +1,43 @@
-//
-//  ViewController.m
-//  AutomationTest
-//
-//  Created by Beth Bounds on 2/9/13.
-//  Copyright (c) 2013 Collins Middle School. All rights reserved.
-//
-
 #import "ViewController.h"
+#import "UIAutomation.h"
 
-@interface ViewController ()
-
-@end
 
 @implementation ViewController
 
+@synthesize button1;
+@synthesize button2;
+@synthesize button3;
+@synthesize button4;
+@synthesize buttons;
+
+static int blockIndex = 0;
+
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
-    }
+    [super viewDidLoad];    
+    self.buttons = [NSMutableArray array];
+    [self.buttons addObject:self.button1];
+    [self.buttons addObject:self.button2];
+    [self.buttons addObject:self.button3];
+    [self.buttons addObject:self.button4];
+    
+    __block void(^pushButton)(void) = ^() {
+        UIButton *button = [self.buttons objectAtIndex:blockIndex++ % self.buttons.count];
+        NSLog(@"%@", button);
+        
+        UIASyntheticEvents *events = [UIASyntheticEvents sharedEventGenerator];
+        CGPoint point = CGPointMake(button.frame.origin.x + button.frame.size.width / 2, 
+                                    button.frame.origin.y + button.frame.size.height / 2);
+        [events sendTaps:10 
+                location:point 
+     withNumberOfTouches:1 
+                  inRect:button.frame];
+        
+        sleep(1);
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), pushButton);
+    };
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), pushButton);
 }
 
 @end
