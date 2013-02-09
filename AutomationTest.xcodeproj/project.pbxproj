@@ -16,6 +16,7 @@
 		4E212F1616C69EF400FC164D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E212F1516C69EF400FC164D /* ViewController.m */; };
 		4E212F1916C69EF400FC164D /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E212F1716C69EF400FC164D /* ViewController_iPhone.xib */; };
 		4E212F3616C6AE5E00FC164D /* UIAutomation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F3516C6AE5E00FC164D /* UIAutomation.framework */; };
+		4E4E401316C6DE130064D4D9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4E4E401216C6DE130064D4D9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +34,8 @@
 		4E212F1516C69EF400FC164D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4E212F1816C69EF400FC164D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		4E212F2216C6AA4C00FC164D /* UIAutomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAutomation.h; sourceTree = "<group>"; };
-		4E212F2C16C6ABF600FC164D /* UIAutomation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAutomation-Prefix.pch"; sourceTree = "<group>"; };
-		4E212F2D16C6ABF600FC164D /* UIAutomation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAutomation.h; sourceTree = "<group>"; };
-		4E212F2E16C6ABF600FC164D /* UIAutomation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAutomation.m; sourceTree = "<group>"; };
 		4E212F3516C6AE5E00FC164D /* UIAutomation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIAutomation.framework; sourceTree = "<group>"; };
+		4E4E401216C6DE130064D4D9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				4E212F0816C69EF400FC164D /* AutomationTest */,
-				4E212F2A16C6ABF600FC164D /* UIAutomation */,
 				4E212F0116C69EF400FC164D /* Frameworks */,
 				4E212EFF16C69EF400FC164D /* Products */,
 			);
@@ -100,28 +98,11 @@
 		4E212F0916C69EF400FC164D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4E4E401216C6DE130064D4D9 /* README.md */,
 				4E212F0A16C69EF400FC164D /* AutomationTest-Info.plist */,
 				4E212F0B16C69EF400FC164D /* InfoPlist.strings */,
 				4E212F0E16C69EF400FC164D /* main.m */,
 				4E212F1016C69EF400FC164D /* AutomationTest-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4E212F2A16C6ABF600FC164D /* UIAutomation */ = {
-			isa = PBXGroup;
-			children = (
-				4E212F2D16C6ABF600FC164D /* UIAutomation.h */,
-				4E212F2E16C6ABF600FC164D /* UIAutomation.m */,
-				4E212F2B16C6ABF600FC164D /* Supporting Files */,
-			);
-			path = UIAutomation;
-			sourceTree = "<group>";
-		};
-		4E212F2B16C6ABF600FC164D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4E212F2C16C6ABF600FC164D /* UIAutomation-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -179,6 +160,7 @@
 			files = (
 				4E212F0D16C69EF400FC164D /* InfoPlist.strings in Resources */,
 				4E212F1916C69EF400FC164D /* ViewController_iPhone.xib in Resources */,
+				4E4E401316C6DE130064D4D9 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
