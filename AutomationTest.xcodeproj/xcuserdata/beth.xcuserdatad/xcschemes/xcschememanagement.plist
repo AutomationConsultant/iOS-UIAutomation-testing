@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PineCone.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>UIAutomation.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>4E212F2716C6ABF600FC164D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4E65003216C7694800E20C78</key>
 		<dict>
 			<key>primary</key>
 			<true/>
