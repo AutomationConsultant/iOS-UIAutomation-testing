@@ -1,5 +1,5 @@
 #import "ViewController.h"
-#import "UIAutomation.h"
+#import "UIButton+PC.h"
 
 
 @implementation ViewController
@@ -23,16 +23,7 @@ static int blockIndex = 0;
     
     __block void(^pushButton)(void) = ^() {
         UIButton *button = [self.buttons objectAtIndex:blockIndex++ % self.buttons.count];
-        NSLog(@"%@", button);
-        
-        UIASyntheticEvents *events = [UIASyntheticEvents sharedEventGenerator];
-        CGPoint point = CGPointMake(button.frame.origin.x + button.frame.size.width / 2, 
-                                    button.frame.origin.y + button.frame.size.height / 2);
-        [events sendTaps:10 
-                location:point 
-     withNumberOfTouches:1 
-                  inRect:button.frame];
-        
+        [button tap];        
         sleep(1);
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), pushButton);
     };

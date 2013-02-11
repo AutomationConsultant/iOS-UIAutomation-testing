@@ -19,6 +19,10 @@
 		4E4E401316C6DE130064D4D9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4E4E401216C6DE130064D4D9 /* README.md */; };
 		4E65003416C7694800E20C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0416C69EF400FC164D /* Foundation.framework */; };
 		4E65003A16C7694800E20C78 /* PineCone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E65003916C7694800E20C78 /* PineCone.m */; };
+		4E65003F16C80A3D00E20C78 /* UIAutomation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F3516C6AE5E00FC164D /* UIAutomation.framework */; };
+		4EB1B47116C8C50B007F165D /* libPineCone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E65003316C7694800E20C78 /* libPineCone.a */; };
+		4EB1B47416C8C6BD007F165D /* UIButton+PC.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EB1B47216C8C6BD007F165D /* UIButton+PC.h */; };
+		4EB1B47516C8C6BD007F165D /* UIButton+PC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB1B47316C8C6BD007F165D /* UIButton+PC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,13 +39,14 @@
 		4E212F1416C69EF400FC164D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4E212F1516C69EF400FC164D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4E212F1816C69EF400FC164D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		4E212F2216C6AA4C00FC164D /* UIAutomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAutomation.h; sourceTree = "<group>"; };
 		4E212F3516C6AE5E00FC164D /* UIAutomation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIAutomation.framework; sourceTree = "<group>"; };
 		4E4E401216C6DE130064D4D9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		4E65003316C7694800E20C78 /* libPineCone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPineCone.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E65003716C7694800E20C78 /* PineCone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PineCone-Prefix.pch"; sourceTree = "<group>"; };
 		4E65003816C7694800E20C78 /* PineCone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PineCone.h; sourceTree = "<group>"; };
 		4E65003916C7694800E20C78 /* PineCone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PineCone.m; sourceTree = "<group>"; };
+		4EB1B47216C8C6BD007F165D /* UIButton+PC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PC.h"; sourceTree = "<group>"; };
+		4EB1B47316C8C6BD007F165D /* UIButton+PC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PC.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB1B47116C8C50B007F165D /* libPineCone.a in Frameworks */,
 				4E212F0316C69EF400FC164D /* UIKit.framework in Frameworks */,
 				4E212F0516C69EF400FC164D /* Foundation.framework in Frameworks */,
 				4E212F0716C69EF400FC164D /* CoreGraphics.framework in Frameworks */,
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E65003F16C80A3D00E20C78 /* UIAutomation.framework in Frameworks */,
 				4E65003416C7694800E20C78 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,7 +107,6 @@
 		4E212F0816C69EF400FC164D /* AutomationTest */ = {
 			isa = PBXGroup;
 			children = (
-				4E212F2216C6AA4C00FC164D /* UIAutomation.h */,
 				4E212F1116C69EF400FC164D /* AppDelegate.h */,
 				4E212F1216C69EF400FC164D /* AppDelegate.m */,
 				4E212F1416C69EF400FC164D /* ViewController.h */,
@@ -128,6 +134,7 @@
 			children = (
 				4E65003816C7694800E20C78 /* PineCone.h */,
 				4E65003916C7694800E20C78 /* PineCone.m */,
+				4EB1B46B16C8C27F007F165D /* Categories */,
 				4E65003616C7694800E20C78 /* Supporting Files */,
 			);
 			path = PineCone;
@@ -141,6 +148,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4EB1B46B16C8C27F007F165D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4EB1B47216C8C6BD007F165D /* UIButton+PC.h */,
+				4EB1B47316C8C6BD007F165D /* UIButton+PC.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -148,6 +164,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB1B47416C8C6BD007F165D /* UIButton+PC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E65003A16C7694800E20C78 /* PineCone.m in Sources */,
+				4EB1B47516C8C6BD007F165D /* UIButton+PC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +344,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutomationTest/AutomationTest-Prefix.pch";
 				INFOPLIST_FILE = "AutomationTest/AutomationTest-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -341,6 +360,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutomationTest/AutomationTest-Prefix.pch";
 				INFOPLIST_FILE = "AutomationTest/AutomationTest-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -350,6 +370,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/PineCone.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PineCone/PineCone-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -362,6 +386,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/PineCone.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PineCone/PineCone-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -398,6 +426,7 @@
 				4E65003C16C7694800E20C78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
