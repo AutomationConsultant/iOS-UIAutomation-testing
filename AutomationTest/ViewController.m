@@ -12,12 +12,6 @@ typedef void(^PushButtonBlock)();
 
 @implementation ViewController
 
-@synthesize button1;
-@synthesize button2;
-@synthesize button3;
-@synthesize button4;
-@synthesize buttons;
-
 static int blockIndex = 0;
 
 - (void)viewDidLoad
