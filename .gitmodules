@@ -1,0 +1,9 @@
+[submodule "externals/CedarAsync"]
+	path = externals/CedarAsync
+	url = git@github.com:cppforlife/CedarAsync.git
+[submodule "externals/CedarShortcuts"]
+	path = externals/CedarShortcuts
+	url = git@github.com:cppforlife/CedarShortcuts.git
+[submodule "externals/cedar"]
+	path = externals/cedar
+	url = git@github.com:pivotal/cedar.git

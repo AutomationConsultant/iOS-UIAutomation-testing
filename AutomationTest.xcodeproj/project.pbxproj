@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4015FBC216D0A8C000102FE2 /* libCedar-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 406BA05716D0A47F0024C779 /* libCedar-StaticLib.a */; };
+		4015FBD416D2DDAD00102FE2 /* UIAutomation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F3516C6AE5E00FC164D /* UIAutomation.framework */; };
 		406EA1E016CBFB3C00D5D3F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0216C69EF400FC164D /* UIKit.framework */; };
 		406EA1E116CBFB3C00D5D3F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0416C69EF400FC164D /* Foundation.framework */; };
 		406EA1E216CBFB3C00D5D3F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0616C69EF400FC164D /* CoreGraphics.framework */; };
 		406EA1E816CBFB3C00D5D3F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 406EA1E616CBFB3C00D5D3F5 /* InfoPlist.strings */; };
 		406EA1EA16CBFB3C00D5D3F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 406EA1E916CBFB3C00D5D3F5 /* main.m */; };
-		406EA1ED16CBFB3D00D5D3F5 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406EA1EC16CBFB3D00D5D3F5 /* Cedar-iOS.framework */; };
-		406EA1EF16CBFB3D00D5D3F5 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 406EA1EE16CBFB3D00D5D3F5 /* ExampleSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		406EA1F316CBFE7A00D5D3F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E212F1216C69EF400FC164D /* AppDelegate.m */; };
+		406EA1F416CBFE7A00D5D3F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E212F1516C69EF400FC164D /* ViewController.m */; };
+		406EA1F516CBFE8400D5D3F5 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E212F1716C69EF400FC164D /* ViewController_iPhone.xib */; };
+		406EA1F716CBFE9800D5D3F5 /* ViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 406EA1F616CBFE9800D5D3F5 /* ViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		406EA1F816CC3EA200D5D3F5 /* libPineCone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E65003316C7694800E20C78 /* libPineCone.a */; };
+		406EA20816CD4EE300D5D3F5 /* libCedarAsync-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 406EA20416CD4E7200D5D3F5 /* libCedarAsync-StaticLib.a */; };
 		4E212F0316C69EF400FC164D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0216C69EF400FC164D /* UIKit.framework */; };
 		4E212F0516C69EF400FC164D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0416C69EF400FC164D /* Foundation.framework */; };
 		4E212F0716C69EF400FC164D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0616C69EF400FC164D /* CoreGraphics.framework */; };
@@ -22,24 +28,112 @@
 		4E212F1316C69EF400FC164D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E212F1216C69EF400FC164D /* AppDelegate.m */; };
 		4E212F1616C69EF400FC164D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E212F1516C69EF400FC164D /* ViewController.m */; };
 		4E212F1916C69EF400FC164D /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E212F1716C69EF400FC164D /* ViewController_iPhone.xib */; };
-		4E212F3616C6AE5E00FC164D /* UIAutomation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F3516C6AE5E00FC164D /* UIAutomation.framework */; };
 		4E4E401316C6DE130064D4D9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4E4E401216C6DE130064D4D9 /* README.md */; };
 		4E65003416C7694800E20C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0416C69EF400FC164D /* Foundation.framework */; };
 		4E65003A16C7694800E20C78 /* PineCone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E65003916C7694800E20C78 /* PineCone.m */; };
 		4E65003F16C80A3D00E20C78 /* UIAutomation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F3516C6AE5E00FC164D /* UIAutomation.framework */; };
-		4EB1B47116C8C50B007F165D /* libPineCone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E65003316C7694800E20C78 /* libPineCone.a */; };
 		4EB1B47416C8C6BD007F165D /* UIButton+PC.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EB1B47216C8C6BD007F165D /* UIButton+PC.h */; };
 		4EB1B47516C8C6BD007F165D /* UIButton+PC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB1B47316C8C6BD007F165D /* UIButton+PC.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		406BA05016D0A47F0024C779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406BA04416D0A47E0024C779 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEEE1FB611DC271300029872;
+			remoteInfo = Cedar;
+		};
+		406BA05216D0A47F0024C779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406BA04416D0A47E0024C779 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEEE218611DC28E200029872;
+			remoteInfo = Specs;
+		};
+		406BA05416D0A47F0024C779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406BA04416D0A47E0024C779 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96A07F0813F276640021974D;
+			remoteInfo = FocusedSpecs;
+		};
+		406BA05616D0A47F0024C779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406BA04416D0A47E0024C779 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEEE222911DC2B0600029872;
+			remoteInfo = "Cedar-StaticLib";
+		};
+		406BA05816D0A47F0024C779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406BA04416D0A47E0024C779 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEEE227611DC2CF900029872;
+			remoteInfo = iOSSpecs;
+		};
+		406BA05A16D0A47F0024C779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406BA04416D0A47E0024C779 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96B5F9F6144A81A7000A6A5D;
+			remoteInfo = OCUnitApp;
+		};
+		406BA05C16D0A47F0024C779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406BA04416D0A47E0024C779 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96B5FA11144A81A8000A6A5D;
+			remoteInfo = OCUnitAppTests;
+		};
+		406BA05E16D0A47F0024C779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406BA04416D0A47E0024C779 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96158A86144A915E005895CE;
+			remoteInfo = OCUnitAppLogicTests;
+		};
+		406EA20116CD4E7200D5D3F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406EA1FB16CD4E7200D5D3F5 /* CedarAsync.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 961EB81E1633C1EB0062EDA0;
+			remoteInfo = CedarAsync;
+		};
+		406EA20316CD4E7200D5D3F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406EA1FB16CD4E7200D5D3F5 /* CedarAsync.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96D6ECCF16332AEA00F26774;
+			remoteInfo = "CedarAsync-StaticLib";
+		};
+		406EA20516CD4E7200D5D3F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406EA1FB16CD4E7200D5D3F5 /* CedarAsync.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96D6EC9B1633236A00F26774;
+			remoteInfo = CedarAsyncSpecs;
+		};
+		4073B82016D08AA100E7265B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4073B81B16D08AA100E7265B /* CedarShortcuts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 960FA08F1605819F00923A87;
+			remoteInfo = CedarShortcuts;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		406BA04416D0A47E0024C779 /* Cedar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cedar.xcodeproj; path = cedar/Cedar.xcodeproj; sourceTree = "<group>"; };
 		406EA1DF16CBFB3C00D5D3F5 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EA1E516CBFB3C00D5D3F5 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		406EA1E716CBFB3C00D5D3F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		406EA1E916CBFB3C00D5D3F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		406EA1EB16CBFB3C00D5D3F5 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		406EA1EC16CBFB3D00D5D3F5 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Specs/Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
-		406EA1EE16CBFB3D00D5D3F5 /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
+		406EA1F616CBFE9800D5D3F5 /* ViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewControllerSpec.mm; sourceTree = "<group>"; };
+		406EA1FB16CD4E7200D5D3F5 /* CedarAsync.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CedarAsync.xcodeproj; path = CedarAsync/CedarAsync.xcodeproj; sourceTree = "<group>"; };
+		4073B81B16D08AA100E7265B /* CedarShortcuts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CedarShortcuts.xcodeproj; path = CedarShortcuts/CedarShortcuts.xcodeproj; sourceTree = "<group>"; };
 		4E212EFE16C69EF400FC164D /* AutomationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutomationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E212F0216C69EF400FC164D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4E212F0416C69EF400FC164D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -68,10 +162,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4015FBC216D0A8C000102FE2 /* libCedar-StaticLib.a in Frameworks */,
+				406EA20816CD4EE300D5D3F5 /* libCedarAsync-StaticLib.a in Frameworks */,
+				406EA1F816CC3EA200D5D3F5 /* libPineCone.a in Frameworks */,
+				4015FBD416D2DDAD00102FE2 /* UIAutomation.framework in Frameworks */,
 				406EA1E016CBFB3C00D5D3F5 /* UIKit.framework in Frameworks */,
 				406EA1E116CBFB3C00D5D3F5 /* Foundation.framework in Frameworks */,
 				406EA1E216CBFB3C00D5D3F5 /* CoreGraphics.framework in Frameworks */,
-				406EA1ED16CBFB3D00D5D3F5 /* Cedar-iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,11 +176,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EB1B47116C8C50B007F165D /* libPineCone.a in Frameworks */,
 				4E212F0316C69EF400FC164D /* UIKit.framework in Frameworks */,
 				4E212F0516C69EF400FC164D /* Foundation.framework in Frameworks */,
 				4E212F0716C69EF400FC164D /* CoreGraphics.framework in Frameworks */,
-				4E212F3616C6AE5E00FC164D /* UIAutomation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +194,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		406BA04516D0A47E0024C779 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				406BA05116D0A47F0024C779 /* Cedar.framework */,
+				406BA05316D0A47F0024C779 /* Specs */,
+				406BA05516D0A47F0024C779 /* FocusedSpecs */,
+				406BA05716D0A47F0024C779 /* libCedar-StaticLib.a */,
+				406BA05916D0A47F0024C779 /* iOSSpecs.app */,
+				406BA05B16D0A47F0024C779 /* OCUnitApp.app */,
+				406BA05D16D0A47F0024C779 /* OCUnitAppTests.octest */,
+				406BA05F16D0A47F0024C779 /* OCUnitAppLogicTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		406EA1D816CBFAC800D5D3F5 /* externals */ = {
 			isa = PBXGroup;
 			children = (
+				406BA04416D0A47E0024C779 /* Cedar.xcodeproj */,
+				4073B81B16D08AA100E7265B /* CedarShortcuts.xcodeproj */,
+				406EA1FB16CD4E7200D5D3F5 /* CedarAsync.xcodeproj */,
 			);
 			path = externals;
 			sourceTree = "<group>";
@@ -109,7 +222,7 @@
 		406EA1E316CBFB3C00D5D3F5 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				406EA1EE16CBFB3D00D5D3F5 /* ExampleSpec.mm */,
+				406EA1F616CBFE9800D5D3F5 /* ViewControllerSpec.mm */,
 				406EA1E416CBFB3C00D5D3F5 /* Supporting Files */,
 			);
 			path = Specs;
@@ -124,6 +237,24 @@
 				406EA1EB16CBFB3C00D5D3F5 /* Specs-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		406EA1FC16CD4E7200D5D3F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				406EA20216CD4E7200D5D3F5 /* CedarAsync.framework */,
+				406EA20416CD4E7200D5D3F5 /* libCedarAsync-StaticLib.a */,
+				406EA20616CD4E7200D5D3F5 /* CedarAsyncSpecs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4073B81C16D08AA100E7265B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4073B82116D08AA100E7265B /* CedarShortcuts.xcplugin */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		4E212EF316C69EF300FC164D = {
@@ -297,6 +428,20 @@
 			mainGroup = 4E212EF316C69EF300FC164D;
 			productRefGroup = 4E212EFF16C69EF400FC164D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 406BA04516D0A47E0024C779 /* Products */;
+					ProjectRef = 406BA04416D0A47E0024C779 /* Cedar.xcodeproj */;
+				},
+				{
+					ProductGroup = 406EA1FC16CD4E7200D5D3F5 /* Products */;
+					ProjectRef = 406EA1FB16CD4E7200D5D3F5 /* CedarAsync.xcodeproj */;
+				},
+				{
+					ProductGroup = 4073B81C16D08AA100E7265B /* Products */;
+					ProjectRef = 4073B81B16D08AA100E7265B /* CedarShortcuts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4E212EFD16C69EF400FC164D /* AutomationTest */,
@@ -306,11 +451,99 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		406BA05116D0A47F0024C779 /* Cedar.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cedar.framework;
+			remoteRef = 406BA05016D0A47F0024C779 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		406BA05316D0A47F0024C779 /* Specs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Specs;
+			remoteRef = 406BA05216D0A47F0024C779 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		406BA05516D0A47F0024C779 /* FocusedSpecs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = FocusedSpecs;
+			remoteRef = 406BA05416D0A47F0024C779 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		406BA05716D0A47F0024C779 /* libCedar-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCedar-StaticLib.a";
+			remoteRef = 406BA05616D0A47F0024C779 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		406BA05916D0A47F0024C779 /* iOSSpecs.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = iOSSpecs.app;
+			remoteRef = 406BA05816D0A47F0024C779 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		406BA05B16D0A47F0024C779 /* OCUnitApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OCUnitApp.app;
+			remoteRef = 406BA05A16D0A47F0024C779 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		406BA05D16D0A47F0024C779 /* OCUnitAppTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCUnitAppTests.octest;
+			remoteRef = 406BA05C16D0A47F0024C779 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		406BA05F16D0A47F0024C779 /* OCUnitAppLogicTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCUnitAppLogicTests.octest;
+			remoteRef = 406BA05E16D0A47F0024C779 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		406EA20216CD4E7200D5D3F5 /* CedarAsync.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CedarAsync.framework;
+			remoteRef = 406EA20116CD4E7200D5D3F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		406EA20416CD4E7200D5D3F5 /* libCedarAsync-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCedarAsync-StaticLib.a";
+			remoteRef = 406EA20316CD4E7200D5D3F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		406EA20616CD4E7200D5D3F5 /* CedarAsyncSpecs.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CedarAsyncSpecs.app;
+			remoteRef = 406EA20516CD4E7200D5D3F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4073B82116D08AA100E7265B /* CedarShortcuts.xcplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CedarShortcuts.xcplugin;
+			remoteRef = 4073B82016D08AA100E7265B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		406EA1DD16CBFB3C00D5D3F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				406EA1F516CBFE8400D5D3F5 /* ViewController_iPhone.xib in Resources */,
 				406EA1E816CBFB3C00D5D3F5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,8 +565,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				406EA1F316CBFE7A00D5D3F5 /* AppDelegate.m in Sources */,
+				406EA1F416CBFE7A00D5D3F5 /* ViewController.m in Sources */,
 				406EA1EA16CBFB3C00D5D3F5 /* main.m in Sources */,
-				406EA1EF16CBFB3D00D5D3F5 /* ExampleSpec.mm in Sources */,
+				406EA1F716CBFE9800D5D3F5 /* ViewControllerSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,9 +631,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Specs/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				HEADER_SEARCH_PATHS = "externals/CedarAsync/Source/Headers/**";
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,9 +659,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Specs/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				HEADER_SEARCH_PATHS = "externals/CedarAsync/Source/Headers/**";
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -577,6 +816,7 @@
 				406EA1F216CBFB3D00D5D3F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E212EF816C69EF300FC164D /* Build configuration list for PBXProject "AutomationTest" */ = {
 			isa = XCConfigurationList;
