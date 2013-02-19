@@ -14,4 +14,9 @@
     [[UIASyntheticEvents sharedEventGenerator] sendTap:[self centerForFrame:view.frame]];
 }
 
++ (void)tapAndHoldElement:(UIView *)view
+{
+    [[UIASyntheticEvents sharedEventGenerator] touchDown:[self centerForFrame:view.frame]];
+}
+
 @end

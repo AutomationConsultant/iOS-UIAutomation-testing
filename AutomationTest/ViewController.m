@@ -3,10 +3,12 @@
 
 @implementation ViewController
 
-- (IBAction)didTapButton:(id)sender
+- (IBAction)didTapButton:(UIButton *)sender
 {
     self.buttonTapCount++;
-    self.button1.backgroundColor = [UIColor blueColor];
+    NSString *normalTitle = [sender titleForState:UIControlStateNormal];
+    normalTitle = [normalTitle substringToIndex:8];
+    [sender setTitle:[NSString stringWithFormat:@"%@ √", normalTitle] forState:UIControlStateNormal];
 }
 
 @end

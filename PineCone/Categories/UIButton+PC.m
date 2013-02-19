@@ -8,4 +8,9 @@
     [PineCone tapElement:self];
 }
 
+- (void)tapAndHold
+{
+    [PineCone tapAndHoldElement:self];
+}
+
 @end
