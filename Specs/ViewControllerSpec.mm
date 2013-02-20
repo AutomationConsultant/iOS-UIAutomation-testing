@@ -1,6 +1,6 @@
 #import "UIButton+PC.h"
 #import "CedarAsync.h"
-#import "ViewController.h"
+#import "ViewController1.h"
 
 
 using namespace Cedar::Matchers;
@@ -8,9 +8,9 @@ using namespace Cedar::Doubles;
 
 SPEC_BEGIN(ViewControllerSpec)
 
-describe(@"ViewController", ^{    
+describe(@"ViewController1", ^{    
     __block UIWindow *window;
-    __block ViewController *controller;
+    __block ViewController1 *controller;
     
     // in this case, this will be the cedar spec harness (result viewer)
     UIView *view = [[[[UIApplication sharedApplication] keyWindow] subviews] lastObject];
@@ -19,8 +19,8 @@ describe(@"ViewController", ^{
         beforeEach(^{
             // loading of the view under test into a main app window (removing spec harness)
             window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-            controller = [[ViewController alloc] initWithNibName:@"ViewController_iPhone"
-                                                          bundle:[NSBundle bundleForClass:[ViewController class]]];             
+            controller = [[ViewController1 alloc] initWithNibName:@"ViewController1"
+                                                          bundle:[NSBundle bundleForClass:[ViewController1 class]]];
             [window addSubview:controller.view];
             [window makeKeyAndVisible];
         });

@@ -1,7 +1,7 @@
-#import "ViewController.h"
+#import "ViewController1.h"
 
 
-@implementation ViewController
+@implementation ViewController1
 
 - (IBAction)didTapButton:(UIButton *)sender
 {

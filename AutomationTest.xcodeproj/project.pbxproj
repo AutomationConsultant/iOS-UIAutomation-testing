@@ -15,8 +15,8 @@
 		406EA1E816CBFB3C00D5D3F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 406EA1E616CBFB3C00D5D3F5 /* InfoPlist.strings */; };
 		406EA1EA16CBFB3C00D5D3F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 406EA1E916CBFB3C00D5D3F5 /* main.m */; };
 		406EA1F316CBFE7A00D5D3F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E212F1216C69EF400FC164D /* AppDelegate.m */; };
-		406EA1F416CBFE7A00D5D3F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E212F1516C69EF400FC164D /* ViewController.m */; };
-		406EA1F516CBFE8400D5D3F5 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E212F1716C69EF400FC164D /* ViewController_iPhone.xib */; };
+		406EA1F416CBFE7A00D5D3F5 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E212F1516C69EF400FC164D /* ViewController1.m */; };
+		406EA1F516CBFE8400D5D3F5 /* ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E212F1716C69EF400FC164D /* ViewController1.xib */; };
 		406EA1F716CBFE9800D5D3F5 /* ViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 406EA1F616CBFE9800D5D3F5 /* ViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		406EA1F816CC3EA200D5D3F5 /* libPineCone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E65003316C7694800E20C78 /* libPineCone.a */; };
 		406EA20816CD4EE300D5D3F5 /* libCedarAsync-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 406EA20416CD4E7200D5D3F5 /* libCedarAsync-StaticLib.a */; };
@@ -26,8 +26,8 @@
 		4E212F0D16C69EF400FC164D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E212F0B16C69EF400FC164D /* InfoPlist.strings */; };
 		4E212F0F16C69EF400FC164D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E212F0E16C69EF400FC164D /* main.m */; };
 		4E212F1316C69EF400FC164D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E212F1216C69EF400FC164D /* AppDelegate.m */; };
-		4E212F1616C69EF400FC164D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E212F1516C69EF400FC164D /* ViewController.m */; };
-		4E212F1916C69EF400FC164D /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E212F1716C69EF400FC164D /* ViewController_iPhone.xib */; };
+		4E212F1616C69EF400FC164D /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E212F1516C69EF400FC164D /* ViewController1.m */; };
+		4E212F1916C69EF400FC164D /* ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E212F1716C69EF400FC164D /* ViewController1.xib */; };
 		4E4E401316C6DE130064D4D9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4E4E401216C6DE130064D4D9 /* README.md */; };
 		4E65003416C7694800E20C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0416C69EF400FC164D /* Foundation.framework */; };
 		4E65003A16C7694800E20C78 /* PineCone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E65003916C7694800E20C78 /* PineCone.m */; };
@@ -144,9 +144,9 @@
 		4E212F1016C69EF400FC164D /* AutomationTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutomationTest-Prefix.pch"; sourceTree = "<group>"; };
 		4E212F1116C69EF400FC164D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4E212F1216C69EF400FC164D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4E212F1416C69EF400FC164D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4E212F1516C69EF400FC164D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4E212F1816C69EF400FC164D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		4E212F1416C69EF400FC164D /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		4E212F1516C69EF400FC164D /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		4E212F1816C69EF400FC164D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController1.xib; sourceTree = "<group>"; };
 		4E212F3516C6AE5E00FC164D /* UIAutomation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIAutomation.framework; sourceTree = "<group>"; };
 		4E4E401216C6DE130064D4D9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		4E65003316C7694800E20C78 /* libPineCone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPineCone.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,9 +296,9 @@
 			children = (
 				4E212F1116C69EF400FC164D /* AppDelegate.h */,
 				4E212F1216C69EF400FC164D /* AppDelegate.m */,
-				4E212F1416C69EF400FC164D /* ViewController.h */,
-				4E212F1516C69EF400FC164D /* ViewController.m */,
-				4E212F1716C69EF400FC164D /* ViewController_iPhone.xib */,
+				4E212F1416C69EF400FC164D /* ViewController1.h */,
+				4E212F1516C69EF400FC164D /* ViewController1.m */,
+				4E212F1716C69EF400FC164D /* ViewController1.xib */,
 				4E212F0916C69EF400FC164D /* Supporting Files */,
 			);
 			path = AutomationTest;
@@ -543,7 +543,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				406EA1F516CBFE8400D5D3F5 /* ViewController_iPhone.xib in Resources */,
+				406EA1F516CBFE8400D5D3F5 /* ViewController1.xib in Resources */,
 				406EA1E816CBFB3C00D5D3F5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,7 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E212F0D16C69EF400FC164D /* InfoPlist.strings in Resources */,
-				4E212F1916C69EF400FC164D /* ViewController_iPhone.xib in Resources */,
+				4E212F1916C69EF400FC164D /* ViewController1.xib in Resources */,
 				4E4E401316C6DE130064D4D9 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,7 +566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				406EA1F316CBFE7A00D5D3F5 /* AppDelegate.m in Sources */,
-				406EA1F416CBFE7A00D5D3F5 /* ViewController.m in Sources */,
+				406EA1F416CBFE7A00D5D3F5 /* ViewController1.m in Sources */,
 				406EA1EA16CBFB3C00D5D3F5 /* main.m in Sources */,
 				406EA1F716CBFE9800D5D3F5 /* ViewControllerSpec.mm in Sources */,
 			);
@@ -578,7 +578,7 @@
 			files = (
 				4E212F0F16C69EF400FC164D /* main.m in Sources */,
 				4E212F1316C69EF400FC164D /* AppDelegate.m in Sources */,
-				4E212F1616C69EF400FC164D /* ViewController.m in Sources */,
+				4E212F1616C69EF400FC164D /* ViewController1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,12 +610,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		4E212F1716C69EF400FC164D /* ViewController_iPhone.xib */ = {
+		4E212F1716C69EF400FC164D /* ViewController1.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4E212F1816C69EF400FC164D /* en */,
 			);
-			name = ViewController_iPhone.xib;
+			name = ViewController1.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
