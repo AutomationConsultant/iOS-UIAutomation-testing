@@ -1,18 +1,18 @@
 #import "AppDelegate.h"
 #import "ViewController1.h"
-
+#import "SpecModule.h"
 
 @implementation AppDelegate
 
-@synthesize window = _window;
-@synthesize viewController = _viewController;
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    id<BSInjector> injector = [Blindside injectorWithModule:[SpecModule module]];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.viewController = [[ViewController1 alloc] initWithNibName:@"ViewController1" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    UINavigationController *navController1 = [injector getInstance:@"navController1"];
+    self.window.rootViewController = navController1;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
