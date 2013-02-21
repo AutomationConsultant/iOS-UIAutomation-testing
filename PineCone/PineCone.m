@@ -6,7 +6,7 @@
 + (CGPoint)centerForFrame:(CGRect)frame
 {
     return CGPointMake(frame.origin.x + frame.size.width / 2, 
-                       frame.origin.y + frame.size.height / 2);
+                       (frame.origin.y + frame.size.height / 2) + 60);
 }
 
 + (void)tapElement:(UIView *)view

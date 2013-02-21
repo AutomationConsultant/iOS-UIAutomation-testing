@@ -1,7 +1,9 @@
 #import "UIButton+PC.h"
 #import "CedarAsync.h"
 #import "ViewController1.h"
-
+#import "ViewController2.h"
+#import <UIKit/UIKit.h>
+#import "SpecModule.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -11,17 +13,21 @@ SPEC_BEGIN(ViewControllerSpec)
 describe(@"ViewController1", ^{    
     __block UIWindow *window;
     __block ViewController1 *controller;
+    __block UINavigationController *navController;
+    __block id<BSInjector> injector;
     
     // in this case, this will be the cedar spec harness (result viewer)
     UIView *view = [[[[UIApplication sharedApplication] keyWindow] subviews] lastObject];
     
     describe(@"when the view appears", ^{
         beforeEach(^{
+            injector = [Blindside injectorWithModule:[SpecModule module]];
+            
             // loading of the view under test into a main app window (removing spec harness)
             window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-            controller = [[ViewController1 alloc] initWithNibName:@"ViewController1"
-                                                          bundle:[NSBundle bundleForClass:[ViewController1 class]]];
-            [window addSubview:controller.view];
+            navController = [injector getInstance:@"navController1"];
+            controller = (ViewController1 *)[navController topViewController];
+            window.rootViewController = navController;
             [window makeKeyAndVisible];
         });
         
@@ -68,16 +74,27 @@ describe(@"ViewController1", ^{
                 in_time(controller.button2.titleLabel.text) should equal(@"Button 2 √");
             });
         });
-    
+        
+        describe(@"and when the next button is tapped", ^{
+            beforeEach(^{
+                [controller.nextButton tap];
+            });
+            
+            it(@"should push a view controller 2 on to the top of the nav stack", ^{
+                NSLog(@"================> %@", [navController topViewController]);
+                in_time([navController topViewController]) should be_instance_of([ViewController2 class]);
+            });
+        });
+        
         describe(@"and when button 1 is tapped and held down", ^{
             beforeEach(^{
                 [controller.button1 tapAndHold];
             });
             
             it(@"should show 'PUSH' as it's title", ^{
-                in_time(controller.button1.titleLabel.text) should equal(@"PUSH");                
+                in_time(controller.button1.titleLabel.text) should equal(@"PUSH");
             });
-        }); 
+        });
     });
 });
 
