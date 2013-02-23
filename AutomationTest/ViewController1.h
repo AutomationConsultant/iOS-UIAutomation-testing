@@ -8,7 +8,7 @@
 @property (assign, nonatomic) NSInteger buttonTapCount;
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;
 
-- (IBAction)didTapButton:(id)sender;
+- (IBAction)didTapButton:(UIButton *)sender forEvent:(UIEvent *)event;
 - (IBAction)didTapNextButton:(id)sender;
 
 @end

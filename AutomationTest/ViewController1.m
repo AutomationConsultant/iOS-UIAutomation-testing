@@ -3,7 +3,7 @@
 
 @implementation ViewController1
 
-- (IBAction)didTapButton:(UIButton *)sender {
+- (IBAction)didTapButton:(UIButton *)sender forEvent:(UIEvent *)event {
     self.buttonTapCount++;
     NSString *normalTitle = [sender titleForState:UIControlStateNormal];
     normalTitle = [normalTitle substringToIndex:8];

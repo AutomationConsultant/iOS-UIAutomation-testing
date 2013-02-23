@@ -5,18 +5,23 @@
 
 + (CGPoint)centerForFrame:(CGRect)frame
 {
-    return CGPointMake(frame.origin.x + frame.size.width / 2, 
-                       (frame.origin.y + frame.size.height / 2) + 60);
+    return CGPointMake(frame.origin.x + frame.size.width / 2,
+                            (frame.origin.y + frame.size.height / 2));
+}
+
++ (CGRect)frameAdjustedForWindowWithView:(UIView *)view
+{
+    return [view convertRect:view.bounds toView:[[UIApplication sharedApplication] keyWindow]];
 }
 
 + (void)tapElement:(UIView *)view
 {
-    [[UIASyntheticEvents sharedEventGenerator] sendTap:[self centerForFrame:view.frame]];
+    [[UIASyntheticEvents sharedEventGenerator] sendTap:[self centerForFrame:[PineCone frameAdjustedForWindowWithView:view]]];
 }
 
 + (void)tapAndHoldElement:(UIView *)view
 {
-    [[UIASyntheticEvents sharedEventGenerator] touchDown:[self centerForFrame:view.frame]];
+    [[UIASyntheticEvents sharedEventGenerator] touchDown:[self centerForFrame:[PineCone frameAdjustedForWindowWithView:view]]];
 }
 
 @end
