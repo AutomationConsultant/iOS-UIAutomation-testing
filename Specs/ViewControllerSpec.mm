@@ -3,7 +3,7 @@
 #import "ViewController1.h"
 #import "ViewController2.h"
 #import <UIKit/UIKit.h>
-#import "SpecModule.h"
+#import "InjectorModule.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -21,7 +21,7 @@ describe(@"ViewController1", ^{
     
     describe(@"when the view appears", ^{
         beforeEach(^{
-            injector = [Blindside injectorWithModule:[SpecModule module]];
+            injector = [Blindside injectorWithModule:[InjectorModule module]];
             
             // loading of the view under test into a main app window (removing spec harness)
             window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -81,7 +81,6 @@ describe(@"ViewController1", ^{
             });
             
             it(@"should push a view controller 2 on to the top of the nav stack", ^{
-                NSLog(@"================> %@", [navController topViewController]);
                 in_time([navController topViewController]) should be_instance_of([ViewController2 class]);
             });
         });

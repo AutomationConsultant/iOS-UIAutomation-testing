@@ -20,14 +20,14 @@
 		406EA1F716CBFE9800D5D3F5 /* ViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 406EA1F616CBFE9800D5D3F5 /* ViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		406EA1F816CC3EA200D5D3F5 /* libPineCone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E65003316C7694800E20C78 /* libPineCone.a */; };
 		406EA20816CD4EE300D5D3F5 /* libCedarAsync-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 406EA20416CD4E7200D5D3F5 /* libCedarAsync-StaticLib.a */; };
-		40F924F916D579220089ECAE /* SpecModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F924F816D579220089ECAE /* SpecModule.m */; };
-		40F9250116D5BD3B0089ECAE /* libBlindside-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F924E816D578F70089ECAE /* libBlindside-StaticLib.a */; };
-		40F9250216D5C15A0089ECAE /* SpecModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F924F816D579220089ECAE /* SpecModule.m */; };
-		40F9250316D5C1610089ECAE /* libBlindside-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F924E816D578F70089ECAE /* libBlindside-StaticLib.a */; };
 		40F924C616D46E940089ECAE /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F924C416D46E940089ECAE /* ViewController2.m */; };
 		40F924C716D46E940089ECAE /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F924C416D46E940089ECAE /* ViewController2.m */; };
 		40F924C816D46E940089ECAE /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F924C516D46E940089ECAE /* ViewController2.xib */; };
 		40F924C916D46E940089ECAE /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F924C516D46E940089ECAE /* ViewController2.xib */; };
+		40F924F916D579220089ECAE /* InjectorModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F924F816D579220089ECAE /* InjectorModule.m */; };
+		40F9250116D5BD3B0089ECAE /* libBlindside-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F924E816D578F70089ECAE /* libBlindside-StaticLib.a */; };
+		40F9250216D5C15A0089ECAE /* InjectorModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F924F816D579220089ECAE /* InjectorModule.m */; };
+		40F9250316D5C1610089ECAE /* libBlindside-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F924E816D578F70089ECAE /* libBlindside-StaticLib.a */; };
 		4E212F0316C69EF400FC164D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0216C69EF400FC164D /* UIKit.framework */; };
 		4E212F0516C69EF400FC164D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0416C69EF400FC164D /* Foundation.framework */; };
 		4E212F0716C69EF400FC164D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0616C69EF400FC164D /* CoreGraphics.framework */; };
@@ -163,12 +163,12 @@
 		406EA1F616CBFE9800D5D3F5 /* ViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewControllerSpec.mm; sourceTree = "<group>"; };
 		406EA1FB16CD4E7200D5D3F5 /* CedarAsync.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CedarAsync.xcodeproj; path = CedarAsync/CedarAsync.xcodeproj; sourceTree = "<group>"; };
 		4073B81B16D08AA100E7265B /* CedarShortcuts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CedarShortcuts.xcodeproj; path = CedarShortcuts/CedarShortcuts.xcodeproj; sourceTree = "<group>"; };
-		40F924DB16D578F60089ECAE /* Blindside.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Blindside.xcodeproj; path = blindside/Blindside.xcodeproj; sourceTree = "<group>"; };
-		40F924F716D579220089ECAE /* SpecModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecModule.h; sourceTree = "<group>"; };
-		40F924F816D579220089ECAE /* SpecModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecModule.m; sourceTree = "<group>"; };
 		40F924C316D46E940089ECAE /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		40F924C416D46E940089ECAE /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		40F924C516D46E940089ECAE /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
+		40F924DB16D578F60089ECAE /* Blindside.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Blindside.xcodeproj; path = blindside/Blindside.xcodeproj; sourceTree = "<group>"; };
+		40F924F716D579220089ECAE /* InjectorModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjectorModule.h; sourceTree = "<group>"; };
+		40F924F816D579220089ECAE /* InjectorModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjectorModule.m; sourceTree = "<group>"; };
 		4E212EFE16C69EF400FC164D /* AutomationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutomationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E212F0216C69EF400FC164D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4E212F0416C69EF400FC164D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -347,8 +347,8 @@
 				4E212F1416C69EF400FC164D /* ViewController1.h */,
 				4E212F1516C69EF400FC164D /* ViewController1.m */,
 				4E212F1716C69EF400FC164D /* ViewController1.xib */,
-				40F924F716D579220089ECAE /* SpecModule.h */,
-				40F924F816D579220089ECAE /* SpecModule.m */,
+				40F924F716D579220089ECAE /* InjectorModule.h */,
+				40F924F816D579220089ECAE /* InjectorModule.m */,
 				40F924C316D46E940089ECAE /* ViewController2.h */,
 				40F924C416D46E940089ECAE /* ViewController2.m */,
 				40F924C516D46E940089ECAE /* ViewController2.xib */,
@@ -645,7 +645,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F9250216D5C15A0089ECAE /* SpecModule.m in Sources */,
+				40F9250216D5C15A0089ECAE /* InjectorModule.m in Sources */,
 				406EA1F316CBFE7A00D5D3F5 /* AppDelegate.m in Sources */,
 				406EA1F416CBFE7A00D5D3F5 /* ViewController1.m in Sources */,
 				406EA1EA16CBFB3C00D5D3F5 /* main.m in Sources */,
@@ -661,7 +661,7 @@
 				4E212F0F16C69EF400FC164D /* main.m in Sources */,
 				4E212F1316C69EF400FC164D /* AppDelegate.m in Sources */,
 				4E212F1616C69EF400FC164D /* ViewController1.m in Sources */,
-				40F924F916D579220089ECAE /* SpecModule.m in Sources */,
+				40F924F916D579220089ECAE /* InjectorModule.m in Sources */,
 				40F924C616D46E940089ECAE /* ViewController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

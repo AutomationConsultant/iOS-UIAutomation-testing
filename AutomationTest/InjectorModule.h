@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface SpecModule : NSObject<BSModule>
+@interface InjectorModule : NSObject<BSModule>
 
 + (id<BSModule>)module;
 

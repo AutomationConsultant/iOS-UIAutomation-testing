@@ -1,10 +1,10 @@
-#import "SpecModule.h"
+#import "InjectorModule.h"
 #import "ViewController1.h"
 
-@implementation SpecModule
+@implementation InjectorModule
 
 + (id<BSModule>)module {
-    return [SpecModule new];
+    return [InjectorModule new];
 }
 
 - (void)configure:(id<BSBinder>)binder {
