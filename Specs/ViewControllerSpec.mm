@@ -1,24 +1,30 @@
-#import "UIButton+PC.h"
-#import "CedarAsync.h"
 #import "ViewController1.h"
 #import "ViewController2.h"
-#import <UIKit/UIKit.h>
+#import "CedarAsync.h"
 #import "InjectorModule.h"
+
+#import <UIAutomation/UIAutomation.h>
+#import "PineCone.h"
+#import "UIButton+PC.h"
+#import "UIView+PC.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
 
 SPEC_BEGIN(ViewControllerSpec)
 
-describe(@"ViewController1", ^{    
+describe(@"ViewController1", ^{
+    UIATarget *target = [UIATarget localTarget];
+    UIAApplication *app = [target frontMostApp];
+    
     __block UIWindow *window;
     __block ViewController1 *controller;
     __block UINavigationController *navController;
     __block id<BSInjector> injector;
-    
+        
     // in this case, this will be the cedar spec harness (result viewer)
     UIView *view = [[[[UIApplication sharedApplication] keyWindow] subviews] lastObject];
-    
+
     describe(@"when the view appears", ^{
         beforeEach(^{
             injector = [Blindside injectorWithModule:[InjectorModule module]];
@@ -28,7 +34,7 @@ describe(@"ViewController1", ^{
             navController = [injector getInstance:@"navController1"];
             controller = (ViewController1 *)[navController topViewController];
             window.rootViewController = navController;
-            [window makeKeyAndVisible];
+            [window makeKeyAndVisible];        
         });
         
         afterEach(^{
@@ -40,7 +46,7 @@ describe(@"ViewController1", ^{
             [controller.view removeFromSuperview];
             [window addSubview:view];
         });
-        
+
         it(@"should show buttons", ^{
             controller.button1.hidden should_not be_truthy;
             controller.button2.hidden should_not be_truthy;
@@ -77,19 +83,35 @@ describe(@"ViewController1", ^{
         
         describe(@"and when the next button is tapped", ^{
             beforeEach(^{
-                [controller.nextButton tap];
+//                [controller.nextButton tap];
+                CGPoint point = CGPointMake(269, 446);
+                [PineCone tapElementAtPoint:point];
             });
             
             it(@"should push a view controller 2 on to the top of the nav stack", ^{
                 in_time([navController topViewController]) should be_instance_of([ViewController2 class]);
             });
+            
+            describe(@"and when the back button is tapped", ^{
+                beforeEach(^{
+                    CGPoint point = CGPointMake(32.0, 44.0);
+                    [PineCone tapElementAtPoint:point];
+                    [PineCone tapElementAtPoint:point];
+                    [PineCone tapElementAtPoint:point];
+                    [PineCone tapElementAtPoint:point];
+                    [PineCone tapElementAtPoint:point];
+                });
+                it(@"should push view controller 1 back on top of the nav stack", ^{
+                    in_time([navController topViewController]) should be_instance_of([ViewController1 class]);
+                });
+            });
         });
-        
+
         describe(@"and when button 1 is tapped and held down", ^{
             beforeEach(^{
                 [controller.button1 tapAndHold];
             });
-            
+
             it(@"should show 'PUSH' as it's title", ^{
                 in_time(controller.button1.titleLabel.text) should equal(@"PUSH");
             });

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4015FBC216D0A8C000102FE2 /* libCedar-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 406BA05716D0A47F0024C779 /* libCedar-StaticLib.a */; };
 		4015FBD416D2DDAD00102FE2 /* UIAutomation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F3516C6AE5E00FC164D /* UIAutomation.framework */; };
+		4032E8A216DBD94000C5736A /* UIView+PC.h in Headers */ = {isa = PBXBuildFile; fileRef = 4032E8A016DBD94000C5736A /* UIView+PC.h */; };
+		4032E8A316DBD94000C5736A /* UIView+PC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032E8A116DBD94000C5736A /* UIView+PC.m */; };
 		406EA1E016CBFB3C00D5D3F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0216C69EF400FC164D /* UIKit.framework */; };
 		406EA1E116CBFB3C00D5D3F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0416C69EF400FC164D /* Foundation.framework */; };
 		406EA1E216CBFB3C00D5D3F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F0616C69EF400FC164D /* CoreGraphics.framework */; };
@@ -20,6 +22,7 @@
 		406EA1F716CBFE9800D5D3F5 /* ViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 406EA1F616CBFE9800D5D3F5 /* ViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		406EA1F816CC3EA200D5D3F5 /* libPineCone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E65003316C7694800E20C78 /* libPineCone.a */; };
 		406EA20816CD4EE300D5D3F5 /* libCedarAsync-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 406EA20416CD4E7200D5D3F5 /* libCedarAsync-StaticLib.a */; };
+		40817A2A16F4D6CD00E367DD /* UIAutomation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E212F3516C6AE5E00FC164D /* UIAutomation.framework */; };
 		40F924C616D46E940089ECAE /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F924C416D46E940089ECAE /* ViewController2.m */; };
 		40F924C716D46E940089ECAE /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F924C416D46E940089ECAE /* ViewController2.m */; };
 		40F924C816D46E940089ECAE /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F924C516D46E940089ECAE /* ViewController2.xib */; };
@@ -153,6 +156,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4032E8A016DBD94000C5736A /* UIView+PC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PC.h"; sourceTree = "<group>"; };
+		4032E8A116DBD94000C5736A /* UIView+PC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PC.m"; sourceTree = "<group>"; };
 		406BA04416D0A47E0024C779 /* Cedar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cedar.xcodeproj; path = cedar/Cedar.xcodeproj; sourceTree = "<group>"; };
 		406EA1DF16CBFB3C00D5D3F5 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EA1E516CBFB3C00D5D3F5 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
@@ -197,14 +202,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F9250316D5C1610089ECAE /* libBlindside-StaticLib.a in Frameworks */,
-				4015FBC216D0A8C000102FE2 /* libCedar-StaticLib.a in Frameworks */,
-				406EA20816CD4EE300D5D3F5 /* libCedarAsync-StaticLib.a in Frameworks */,
-				406EA1F816CC3EA200D5D3F5 /* libPineCone.a in Frameworks */,
 				4015FBD416D2DDAD00102FE2 /* UIAutomation.framework in Frameworks */,
 				406EA1E016CBFB3C00D5D3F5 /* UIKit.framework in Frameworks */,
 				406EA1E116CBFB3C00D5D3F5 /* Foundation.framework in Frameworks */,
 				406EA1E216CBFB3C00D5D3F5 /* CoreGraphics.framework in Frameworks */,
+				40F9250316D5C1610089ECAE /* libBlindside-StaticLib.a in Frameworks */,
+				4015FBC216D0A8C000102FE2 /* libCedar-StaticLib.a in Frameworks */,
+				406EA20816CD4EE300D5D3F5 /* libCedarAsync-StaticLib.a in Frameworks */,
+				406EA1F816CC3EA200D5D3F5 /* libPineCone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,10 +217,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F9250116D5BD3B0089ECAE /* libBlindside-StaticLib.a in Frameworks */,
+				40817A2A16F4D6CD00E367DD /* UIAutomation.framework in Frameworks */,
 				4E212F0316C69EF400FC164D /* UIKit.framework in Frameworks */,
 				4E212F0516C69EF400FC164D /* Foundation.framework in Frameworks */,
 				4E212F0716C69EF400FC164D /* CoreGraphics.framework in Frameworks */,
+				40F9250116D5BD3B0089ECAE /* libBlindside-StaticLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +399,8 @@
 			children = (
 				4EB1B47216C8C6BD007F165D /* UIButton+PC.h */,
 				4EB1B47316C8C6BD007F165D /* UIButton+PC.m */,
+				4032E8A016DBD94000C5736A /* UIView+PC.h */,
+				4032E8A116DBD94000C5736A /* UIView+PC.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -405,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EB1B47416C8C6BD007F165D /* UIButton+PC.h in Headers */,
+				4032E8A216DBD94000C5736A /* UIView+PC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +681,7 @@
 			files = (
 				4E65003A16C7694800E20C78 /* PineCone.m in Sources */,
 				4EB1B47516C8C6BD007F165D /* UIButton+PC.m in Sources */,
+				4032E8A316DBD94000C5736A /* UIView+PC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

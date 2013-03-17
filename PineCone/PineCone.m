@@ -3,6 +3,11 @@
 
 @implementation PineCone
 
++ (UIATarget *)target
+{
+    return [NSClassFromString(@"UIATarget") localTarget];
+}
+
 + (CGPoint)centerForFrame:(CGRect)frame
 {
     return CGPointMake(frame.origin.x + frame.size.width / 2,
@@ -14,6 +19,11 @@
     return [view convertRect:view.bounds toView:[[UIApplication sharedApplication] keyWindow]];
 }
 
++ (void)tapElementAtPoint:(CGPoint)point
+{
+    [[UIASyntheticEvents sharedEventGenerator] sendTap:point];
+}
+
 + (void)tapElement:(UIView *)view
 {
     [[UIASyntheticEvents sharedEventGenerator] sendTap:[self centerForFrame:[PineCone frameAdjustedForWindowWithView:view]]];
@@ -23,5 +33,7 @@
 {
     [[UIASyntheticEvents sharedEventGenerator] touchDown:[self centerForFrame:[PineCone frameAdjustedForWindowWithView:view]]];
 }
+
+
 
 @end
