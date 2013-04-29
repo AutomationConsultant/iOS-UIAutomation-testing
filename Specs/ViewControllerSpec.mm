@@ -83,7 +83,6 @@ describe(@"ViewController1", ^{
         
         describe(@"and when the next button is tapped", ^{
             beforeEach(^{
-//                [controller.nextButton tap];
                 CGPoint point = CGPointMake(269, 446);
                 [PineCone tapElementAtPoint:point];
             });
@@ -95,10 +94,6 @@ describe(@"ViewController1", ^{
             describe(@"and when the back button is tapped", ^{
                 beforeEach(^{
                     CGPoint point = CGPointMake(32.0, 44.0);
-                    [PineCone tapElementAtPoint:point];
-                    [PineCone tapElementAtPoint:point];
-                    [PineCone tapElementAtPoint:point];
-                    [PineCone tapElementAtPoint:point];
                     [PineCone tapElementAtPoint:point];
                 });
                 it(@"should push view controller 1 back on top of the nav stack", ^{

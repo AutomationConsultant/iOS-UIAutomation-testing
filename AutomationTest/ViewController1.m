@@ -20,8 +20,11 @@
 - (IBAction)didTapNextButton:(id)sender {
     ViewController2 *controller = [[ViewController2 alloc] initWithNibName:@"ViewController2"
                                                                     bundle:nil];
+    
     // animated yes causes button to NOT be in position for uiautmation tap action
-    [self.navigationController pushViewController:controller animated:YES];
+    //[self.navigationController pushViewController:controller animated:YES];
+    
+    [self.navigationController pushViewController:controller animated:NO];
 }
 
 @end
